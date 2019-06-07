@@ -54,7 +54,11 @@
                 <label>
                     <input type="text" name="y">
                 </label>
-                <input type="submit" value="=">
+                <label>
+                    <input type="submit" value="=">
+                    <input type="text" value=" "
+                </label>
+
             </form>
             <?php
             }
