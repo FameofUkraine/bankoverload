@@ -9,31 +9,41 @@
 </head>
 <body>
 <?php
-    $a = $b = $c = $d = 4;
-    echo $a++, "<br>";
-    $a = 2;
-    echo ++$b, "<br>";
-    $a = 5;
-    echo $c--, "<br>";
-    $a = 3;
-    echo --$d, "<br>";
-    $a = 4;
+$a = $b = $c = $d = 4;
+echo $a++, "<br>";
+$a = 2;
+echo ++$b, "<br>";
+$a = 5;
+echo $c--, "<br>";
+$a = 3;
+echo --$d, "<br>";
+$a = 4;
 ?>
 
 <?php
-    $d = "Hello";
-    $d = $d."world";
-    echo $d;
-    echo "<br>";
-    $d .= "! ! !";
-    echo $d;
+$d = "Hello";
+$d = $d . "world";
+echo $d;
+echo "<br>";
+$d .= "! ! !";
+echo $d;
 ?>
 
 <?php
-    $value = (7 + 7);
-    $value +=5;
-    echo "<br>";
-    echo $value;
+$value = (7 + 7);
+$value += 5;
+echo "<br>";
+echo $value;
+?>
+<hr>
+<?php
+$exp1 = 40;
+$exp2 = 50;
+$cond = 90;
+$r = $cond ? $exp1: $exp2;
+$r = $a==40? 1:0;
+echo $r
+
 ?>
 
 </body>
