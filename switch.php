@@ -9,8 +9,20 @@
 </head>
 <body>
     <?php
+    echo "<form method=post action=switch.php>";
+    echo "<input type=text name=x>";
+    echo "</br>";
+    echo "<input type=text name=y>";
+    echo "</br>";
+    echo "<input type=radio name=test value=plus>+";
+    echo "<input type=radio name=test value=minus>-";
+    echo "<input type=radio name=test value=multiple>*";
+    echo "<input type=radio name=test value=divide>/";
+    echo "</br>";
+    echo "<input type=submit name=sabmit value=Cчитать>";
+    echo "</form>";
         if (isset($_REQUEST['x'])&&isset($_REQUEST['y'])&&isset($_REQUEST['operator']))
-        switch ($_REQUEST['operator'])
+    {switch ($_REQUEST['operator'])
         {
             case 'plus':
                 echo $_REQUEST['x']+$_REQUEST['y'];
@@ -27,6 +39,7 @@
             default:
                 echo "error";
         }
+    }
     ?>
 </body>
 </html>
