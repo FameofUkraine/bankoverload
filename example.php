@@ -8,43 +8,42 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-$a = $b = $c = $d = 4;
-echo $a++, "<br>";
-$a = 2;
-echo ++$b, "<br>";
-$a = 5;
-echo $c--, "<br>";
-$a = 3;
-echo --$d, "<br>";
-$a = 4;
-?>
 
 <?php
-$d = "Hello";
-$d = $d . "world";
-echo $d;
-echo "<br>";
-$d .= "! ! !";
-echo $d;
-?>
+$bmw = array(
+    "model" => "X5",
+    "speed" => 120,
+    "doors" => 5,
+    "year" => "2006"
+);
+$toyota = array(
+    "model" => "Carina",
+    "speed" => 130,
+    "doors" => 4,
+    "year" => "2007"
+);
+$opel = array(
+    "model" => "Corsa",
+    "speed" => 140,
+    "doors" => 5,
+    "year" => "2007"
+);
+$cars = array();
+$cars[] = $bmw;
+$cars[] = $toyota;
+$cars[] = $opel;
 
-<?php
-$value = (7 + 7);
-$value += 5;
-echo "<br>";
-echo $value;
-?>
-<hr>
-<?php
-$exp1 = 40;
-$exp2 = 50;
-$cond = 90;
-$r = $cond ? $exp1: $exp2;
-$r = $a==40? 1:0;
-echo $r
+echo "<p>BMW - " . $bmw["model"] . " - " . $bmw["speed"] . " - " . $bmw["doors"] . " - " . $bmw["year"] . "</p>";
+echo "<p>TOYOTA - " . $toyota["model"] . " - " . $toyota["speed"], " - " . $toyota["doors"]," - " . $toyota["year"] . "</p>";
+echo "<p>OPEL - " . $opel["model"] . " - " . $opel["speed"] . " - " . $opel["doors"] . " - " . $opel["year"] . "</p>";
+echo "<p>", $cars[0] ["model"], " : ", $cars[0]["year"],
+"</p?>";
+echo "<p>", $cars[1] ["model"], " : ", $cars[1]["year"],
+"</p?>";
+echo "<p>", $cars[2] ["model"], " : ", $cars[2]["year"],
+"</p?>";
+
 
 ?>
-
 </body>
 </html>
