@@ -8,25 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-
 <?php
 
-function factorial($n)
+function bold($string)
 {
-    if ($n <= 1) {
-        return 1;
-    }
-    return $n * factorial($n - 1);
+    return '<b>' . $string . '</b>';
 }
 
-$result = factorial(10);
-echo "10! =" . $result;
+echo bold("red");
+echo bold("ferrari");
+
+if (bold(21) === "<b>22</b>") {
+    echo "blue";
+} else if (bold(22) === "<b>21</b>") {
+    echo "audi";
+}
+
+
 ?>
-
-<?php
-
-?>
-
 
 </body>
 </html>

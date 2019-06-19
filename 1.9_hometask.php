@@ -11,22 +11,23 @@
 
 <?php
 
-function factorial($n)
-{
-    if ($n <= 1) {
-        return 1;
-    }
-    return $n * factorial($n - 1);
+$menu = array (
+    'Home' => 'home.php',
+    'About' => 'about.php',
+    'Gallery' => 'gallery.php',
+    'Services' => 'services.php',
+    'Contact' => 'contact.php'
+);
+foreach ($menu as $link => $href) {
+    echo '<li><a href=\'href\'>', $link, '</a></li>';
 }
 
-$result = factorial(10);
-echo "10! =" . $result;
+
+
+
+
+
+
 ?>
-
-<?php
-
-?>
-
-
 </body>
 </html>
