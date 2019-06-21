@@ -11,7 +11,25 @@
 
 <?php
 
-$menu = array (
+function factorial ($n) {
+    if ($n==1) {
+        return "1";
+    }
+    return factorial($n - 1) . " " . $n;
+}
+    $result = factorial(10);
+
+
+
+
+
+
+
+
+
+
+
+/*$menu = array (
     'Home' => 'home.php',
     'About' => 'about.php',
     'Gallery' => 'gallery.php',
@@ -20,14 +38,13 @@ $menu = array (
 );
 foreach ($menu as $link => $href) {
     echo '<li><a href=\'href\'>', $link, '</a></li>';
-}
-
-
-
-
-
-
+} */
 
 ?>
+
 </body>
 </html>
+
+
+
+

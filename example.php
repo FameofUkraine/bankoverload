@@ -9,23 +9,20 @@
 </head>
 <body>
 
-<?php
+<form action="app/check.php" method="post">
 
-function factorial($n)
-{
-    if ($n <= 1) {
-        return 1;
-    }
-    return $n * factorial($n - 1);
-}
+    <p>Имя: <input name="name" type="text"></p>
 
-$result = factorial(10);
-echo "10! =" . $result;
-?>
+    <p>Фамилия: <input name="surname" type="text"></p>
 
-<?php
+    <p>E-mail: <input name="email" type="text"></p>
 
-?>
+    <p>Сообщение: <br /><textarea name="message" cols="30" rows="5"></textarea></p>
+
+    <p><input type='submit' value='Отправить'></p>
+
+</form>
+
 
 
 </body>
